@@ -80,7 +80,12 @@ def checkingress_host():
 
 def checkstatefulsets():
     print("You have the following statefulsets deployed :")
-    os.system("kubectl -n " + paramsList[2] + " get statefulsets.apps | awk '{if(NR>1)print $1, $2}'")
+    # os.system("kubectl -n " + paramsList[2] + " get statefulsets.apps | awk '{if(NR>1)print $1, $2}'")
+
+    totalstatefulset = subprocess.run(['kubectl', '-n', paramsList[2], 'get', 'statefulsets', '-o', 'yaml'],
+                                      stdout=subprocess.PIPE)
+
+    statefulsets = yaml.safe_load(totalstatefulset.stdout)
 
 
 if checknamespace() != 0 and checkdomain() == 0 and checkip() == 0:
