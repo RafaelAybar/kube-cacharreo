@@ -3,7 +3,10 @@ En este repositorio se alojan recursos y trucos que he ido usando en el trabajo 
 
 ## Índice
 1.  Scrips para creación de clústeres
-2.  Configuraciones de Google Kubernetes Engine
+    * Scripts de Terraform
+2.  [Configuraciones de Google Kubernetes Engine](config_gke/config_gke.md)
+    * Securización de la infraestructura (roles)
+    * Configuración del mantenimiento automático
 3.  Networking
     * VPN de Google
     * Emparejamiento de redes
@@ -13,3 +16,4 @@ En este repositorio se alojan recursos y trucos que he ido usando en el trabajo 
  6. Monitorización
     * Prometheus
     * New Relic
+    * Datadog
