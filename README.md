@@ -9,6 +9,8 @@ En este repositorio se alojan recursos y trucos que he ido usando en el trabajo 
     * Configuración del mantenimiento automático
 3.  Networking
     * VPN de Google
+        * VPN Basada en políticas
+        * VPN Basada en rutas
     * Emparejamiento de redes
  4. Helm
  5. Mantenimiento
