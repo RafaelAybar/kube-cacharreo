@@ -1,11 +1,12 @@
 ## Configuraciones de Google Kubernetes Engine
 
 ### Securización de la infraestructura
-1.  Permisos de Google Cloud mínimos y roles recomendados
+
+#### 1.  Permisos de Google Cloud mínimos y roles recomendados
     * Cuentas de servicio
     * Gestión de usuarios
 
-2.  Mantenimiento
+#### 2.  Mantenimiento
 
 
 ### Configuración del mantenimiento automático
