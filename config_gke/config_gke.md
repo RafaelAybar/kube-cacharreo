@@ -2,14 +2,14 @@
 
 ### Securización de la infraestructura
 
-#### 1.  Permisos de Google Cloud mínimos y roles recomendados
+### 1.  Permisos de Google Cloud mínimos y roles recomendados
     * Cuentas de servicio
     * Gestión de usuarios
 
-#### 2.  Mantenimiento
+### 2.  Mantenimiento
 
 
-### Configuración del mantenimiento automático
+#### Configuración del mantenimiento automático
 
 En GKE, al crear un clúster tenemos la oportunidad de habilitar una opción llamada mantenimiento automático. Esta opción
 permite que Google aplique parches automáticamente. Para que no haya pérdida de servicio se requieren 3 nodos.
