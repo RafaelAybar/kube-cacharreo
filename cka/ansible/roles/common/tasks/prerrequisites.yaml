@@ -1,0 +1,8 @@
+- name: Instalación de paquetes necesarios para los repositorios.
+  apt:
+    pkg:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - gnupg2
+    - software-properties-common

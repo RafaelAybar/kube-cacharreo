@@ -1,0 +1,7 @@
+---
+- name: Set Up k8s (CRIO)
+  hosts: all
+  remote_user: ras
+  become: yes
+  roles:
+    - common

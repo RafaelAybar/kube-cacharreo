@@ -19,3 +19,5 @@ En este repositorio se alojan recursos y trucos que he ido usando en el trabajo 
     * Prometheus
     * New Relic
     * Datadog
+7. CKA y documentación relacionada con k8s.
+    * Playbooks de Ansible 5.X para montar el entorno.[Documentación](cka/ansible/ansible.md)
