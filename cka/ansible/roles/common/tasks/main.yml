@@ -1,0 +1,5 @@
+- name: Paquetería previa necesaria
+  import_tasks: prerrequisitos.yml
+
+- name: Instalación de CRI-O
+  import_tasks: crio-instalacion.yml
