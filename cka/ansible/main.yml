@@ -1,5 +1,5 @@
 ---
-- name: Set Up k8s (CRIO)
+- name: Set Up k8s (CRIO) and install kubectl
   hosts: all
   remote_user: ras
   become: yes

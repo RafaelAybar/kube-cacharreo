@@ -3,3 +3,6 @@
 
 - name: Instalación de CRI-O
   import_tasks: crio-instalacion.yml
+
+- name: Instalación de Kubectl y kubeadm
+  import_tasks: instalacion-kubectl-kubeadm.yml

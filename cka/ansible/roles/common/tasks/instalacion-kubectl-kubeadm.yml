@@ -1,0 +1,17 @@
+- name: Adición de claves del repo de Kubectl
+  ansible.builtin.apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    keyring: /usr/share/keyrings/kubernetes-archive-keyring.gpg
+    state: present
+
+- name: Repositorio de k8s
+  ansible.builtin.apt_repository:
+    repo: deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main
+    state: present
+
+- name: Instalación de kubectl
+  apt:
+    pkg:
+      - kubectl=1.24.1-00
+      - kubeadm=1.24.1-00
+      - kubelet=1.24.1-00
