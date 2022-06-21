@@ -6,3 +6,6 @@
 
 - name: Instalación de Kubectl y kubeadm
   import_tasks: instalacion-kubectl-kubeadm.yml
+
+- name: Creación de directorios
+  import_tasks: directorios.yml

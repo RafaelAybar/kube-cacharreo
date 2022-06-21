@@ -1,0 +1,4 @@
+- name: Creación del directorio .Kube
+  ansible.builtin.file:
+    path: /home/ras/.kube
+    state: directory
