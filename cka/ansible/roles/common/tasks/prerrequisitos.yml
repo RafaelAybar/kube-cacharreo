@@ -18,3 +18,8 @@
 
 - name: Enable br_netfilter module
   ansible.builtin.command: modprobe br_netfilter
+
+- name: Adición de políticas
+  ansible.builtin.copy:
+    src: ../files/99-kubernetes-cri.conf
+    dest: /etc/sysctl.d/99-kubernetes-cri.conf
