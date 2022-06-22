@@ -7,3 +7,14 @@
     - gnupg2
     - software-properties-common
     - bash-completion
+
+- name: Add kernel modules enabled at startup
+  ansible.builtin.copy:
+    src: ../files/modules
+    dest: /etc/modules
+
+- name: Enable overlay module
+  ansible.builtin.command: modprobe overlay
+
+- name: Enable br_netfilter module
+  ansible.builtin.command: modprobe br_netfilter
