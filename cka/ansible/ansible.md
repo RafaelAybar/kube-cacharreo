@@ -8,3 +8,7 @@
 ## Comandos de ansible:
 
 `ansible-playbook -i inventario -K main.yml`
+
+## Instalación de Cálico:
+
+[Documentación oficial](https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart)
