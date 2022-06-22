@@ -2,3 +2,8 @@
   ansible.builtin.file:
     path: /home/ras/.kube
     state: directory
+
+- name: Creación del directorio de calico-kube-controllers
+  ansible.builtin.file:
+    path: /var/lib/calico
+    state: directory
